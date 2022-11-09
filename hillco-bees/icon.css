@@ -1,0 +1,42 @@
+.Icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+  stroke-width: 1px;
+  background: none;
+  pointer-events: none;
+}
+.Icon-cros {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  fill: currentColor;
+  vertical-align: middle;
+  stroke-width: 1px;
+  background: none;
+  pointer-events: none;
+}
+.Icon--facebook {
+  fill: #795b1b;
+  margin-left: 0 !important;
+}
+.Icon--youtube {
+  fill: #795b1b;
+  margin-left: 0 !important;
+}
+.Icon--facebook- {
+  margin-right: 2rem;
+}
+.icon {
+  color: #fff;
+  margin-left: 22px;
+  font-size: 20px;
+  text-decoration: none;
+}
+/* .Icon-search-desktop{
+  position: absolute;
+  left: 50px;
+
+} */

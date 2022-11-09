@@ -1,0 +1,205 @@
+:root {
+  --heading-font-family: 'Chivo', sans-serif;
+  --heading-font-weight: 700;
+  --heading-font-style: normal;
+  --text-font-family: 'Chivo', sans-serif;
+  --text-font-weight: 400;
+  --base-text-font-size: 15px;
+  --default-text-font-size: 14px;
+  --background: #f2b737;
+  --background-rgb: rgb(242, 183, 55);
+  --light-background: #ffffff;
+  --light-background-rgb: rgb(255, 255, 255);
+  --heading-color: #000000;
+  --text-color: #0000;
+  --text-color-rgb: rgb(0, 0, 0);
+  --border-color: #ce9c2f;
+  --border-color-rgb: rgb(206.156, 47);
+  --button-background: #000000;
+  --button-background-rgb: rgb(0, 0, 0);
+  --button-text-color: #ffffff;
+  --header-background: #efecec;
+  --header-border-color: #efecec;
+  --footer-background: rgba(0, 0, 0, 0);
+  --footer-text-color: #ffffff;
+  --footer-heading-color: #ffffff;
+  --footer-border-color: rgba(38, 38, 38, 0.15);
+}
+
+html {
+  font-size: var(--base-text-font-size);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('https://cdn.shopify.com/s/files/1/0630/5520/0511/files/Untitled-1.jpg12.jpg23.jpgnew_8be1b921-bf6c-4fa1-988e-b853340c794a.jpg?v=1648562345');
+  font-family: 'Chivo', sans-serif;
+  height: 100%;
+  /* background-repeat: no-repeat; */
+  /* line-height: 1.65rem; */
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+.top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2b737;
+  color: #000000;
+  /* height: 10%; */
+  padding: 15px 50px;
+}
+.top-bar .row {
+  justify-content: baseline;
+}
+.top-bar p {
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-size: 16px;
+  font-style: var(--heading-font-style);
+  padding: 0;
+}
+.btn-nav {
+  display: none;
+  background: transparent;
+  font-size: 24px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  /* margin-left: 2rem; */
+  /* width: 48px;
+  height: 33px; */
+}
+
+/* card sec */
+#card-sec {
+  background-color: #f1f1f1;
+  padding: 0.5rem 0rem;
+  padding-bottom: 3rem;
+  cursor: pointer;
+  /* padding-top: 2rem; */
+}
+
+.image {
+  /* background-image: url('https://cdn.shopify.com/s/files/1/0630/5520/0511/files/9_750x960_crop_center.jpg?v=1648644094'); */
+  /* opacity: 0; */
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  animation: cardImgLoad 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  /* transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1); */
+}
+.lazyloader {
+  animation: cardImgLoad 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@keyframes cardImgLoad {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.card {
+  text-align: center;
+  height: 100%;
+  border: 3px solid #f2b737;
+  width: 100%;
+}
+.col-1 {
+  box-sizing: border-box;
+  height: 350px;
+  flex: 0 1 calc(15.7% - 8px);
+} /*
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: #f2b737 solid 3px;
+    background-color: #efecec;
+    margin: 10px;
+} */
+/* .card-img-div{
+    height: 100%;
+}
+.card-img{
+    transition-delay: 1s;
+    width: 100%;
+    max-height: 100%;
+} */
+.card-heading {
+  position: relative;
+  top: 69%;
+  /* margin: 1rem; */
+}
+
+.card-h2 {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-height: 2.5rem;
+}
+/* .card-h2-pad{
+  padding-top: 20px;
+} */
+
+.btn-card {
+  display: inline-block;
+  /* width: 80%; */
+  width: 160px;
+  text-transform: uppercase;
+  padding: 10px 7px;
+  background-color: #f2b737;
+  border-radius: 60px;
+  letter-spacing: 0.2em;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  font-size: calc(
+    var(--base-text-font-size) - (var(--default-text-font-size) - 12px)
+  );
+  background: linear-gradient(to right, transparent 50%, #f2b737 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.45s ease-out;
+}
+.btn-card:hover {
+  background-position: left bottom;
+  color: #f2b737;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}

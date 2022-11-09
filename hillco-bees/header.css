@@ -1,0 +1,42 @@
+#header {
+  position: sticky !important;
+  position: -webkit-sticky;
+  z-index: 10;
+  top: 0;
+  background-image: url('https://cdn.shopify.com/s/files/1/0630/5520/0511/files/Untitled-1.jpg12.jpg23.jpgnew_8be1b921-bf6c-4fa1-988e-b853340c794a.jpg?v=1648562345');
+  padding: 17.5px 50px;
+  border-bottom: 1px solid #ffffff;
+  /* padding-bottom: 24px; */
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.header-left {
+  width: 33%;
+}
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+}
+.header-center {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+.hillco-logo {
+  display: flex;
+  justify-content: start;
+  width: 355px;
+  height: 66px;
+}
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+}

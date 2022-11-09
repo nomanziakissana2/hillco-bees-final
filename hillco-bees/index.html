@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="navbarTop.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="icon.css" />
+    <link rel="stylesheet" href="navbarBottom.css" />
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="conff-sec.css" />
+    <link rel="stylesheet" href="shopping.css" />
+
+    <link rel="stylesheet" href="card.css" />
+
+    <link rel="stylesheet" href="what-to-sec.css" />
+    <link rel="stylesheet" href="cardResponsive.css" />
+    <link rel="stylesheet" href="customScrollBar.css">
+    <link rel="stylesheet" href="responsive.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Inter:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d759afb79e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Hillco,LLC</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="btn-close-div">
+        <button class="btn-close" onclick="hideSidebar()">
+          <svg
+            class="Icon-cros Icon--close"
+            role="presentation"
+            viewBox="0 0 16 14"
+          >
+            <path
+              d="M15 0L1 14m14 0L1 0"
+              stroke="currentColor"
+              fill="none"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        class="nav-links-s"
+        id="nav-links-s"
+        style="padding-left: 30px; padding-right: 30px"
+      >
+        <li class="border-bottom-s">
+          <a href="#">Home</a>
+        </li>
+
+        <li class="border-bottom-s">
+          <a href="#" class="desktop-item-s" onclick="showdrop()">Shop </a>
+          <input type="checkbox" id="showDrop-s" />
+          <label for="showDrop-s" class="mobile-item-s mb" onclick="rotate()"
+            ><span> Shop</span>
+            <span id="btn-pls" class="btn-pls"
+              ><i class="fa fa-plus" id="pls"></i
+              ><i class="fa fa-minus" id="mins"> </i></span
+          ></label>
+          <ul class="drop-menu-s" id="cl-s">
+            <li><a href="#">2023 Hive Life Conference Specials </a></li>
+            <li><a href="#">10 Frame Hives &amp; Components</a></li>
+            <li><a href="#">8 Frame Hives &amp; Components</a></li>
+            <li><a href="#">5 Frame Hives &amp; Components</a></li>
+            <li><a href="#">Bee Suits &amp; Gloves</a></li>
+            <li><a href="#">Bees &amp; Queens</a></li>
+            <li><a href="#">Beginner Kits</a></li>
+            <li><a href="#">Feed &amp; Supplements</a></li>
+            <li><a href="#">Feeders</a></li>
+            <li><a href="#">Frames &amp; Foundation</a></li>
+            <li><a href="#">Health &amp; Pest Control</a></li>
+            <li><a href="#">Hive Accessories </a></li>
+            <li><a href="#">Honey Extracting - Extractors </a></li>
+            <li><a href="#">Feed &amp; Supplements</a></li>
+            <li>
+              <a href="#"
+                >Honey Extracting - Honey Removal, Processing, and Extracting
+                Accessories</a
+              >
+            </li>
+            <li>
+              <a href="#">Honey Extracting - Uncapping Tanks &amp; Tools </a>
+            </li>
+            <li><a href="#">Honey Storage and Containers </a></li>
+            <li><a href="#">Queen Rearing Supplies</a></li>
+            <li><a href="#">Smokers &amp; Tools </a></li>
+          </ul>
+        </li>
+        <li class="border-bottom-s">
+          <a href="#">2023 Hive Life Conference Specials</a>
+        </li>
+        <li class="border-bottom-s"><a href="#">About Us</a></li>
+        <li class="border-bottom-s"><a href="#">Contact</a></li>
+        <li class="account-s"><a href="#">Account</a></li>
+      </ul>
+      <div class="bottom" id="bottom">
+        <div class="bottom-icon">
+          <a href=""
+            ><svg class="icon Icon--facebook" viewBox="0 0 9 17">
+              <path
+                d="M5.842 17V9.246h2.653l.398-3.023h-3.05v-1.93c0-.874.246-1.47 1.526-1.47H9V.118C8.718.082 7.75 0 6.623 0 4.27 0 2.66 1.408 2.66 3.994v2.23H0v3.022h2.66V17h3.182z"
+              ></path></svg
+          ></a>
+        </div>
+        <div class="bottom-icon">
+          <a href=""
+            ><svg
+              class="icon Icon--youtube"
+              role="presentation"
+              viewBox="0 0 33 32"
+            >
+              <path
+                d="M0 25.693q0 1.997 1.318 3.395t3.209 1.398h24.259q1.891 0 3.209-1.398t1.318-3.395V6.387q0-1.997-1.331-3.435t-3.195-1.438H4.528q-1.864 0-3.195 1.438T.002 6.387v19.306zm12.116-3.488V9.876q0-.186.107-.293.08-.027.133-.027l.133.027 11.61 6.178q.107.107.107.266 0 .107-.107.213l-11.61 6.178q-.053.053-.107.053-.107 0-.16-.053-.107-.107-.107-.213z"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="slidemain" id="slidemain"></div>
+    <div class="top-bar">
+      <div class="topbar-l"><p>FREE SHIPPING ON ALL ORDERS OVER $100</p></div>
+      <div class="topbar-r">
+        <p>LOCALLY PICKED UP ORDERS GET A 10% DISCOUNT</p>
+        <p></p>
+      </div>
+    </div>
+    <section id="header">
+      <div class="header-main">
+        <div class="header-left">
+          <button class="btn-nav" onclick="sidebarShow()">
+            <span class=""
+              ><svg
+                class="Icon icon Icon--nav-desktop"
+                role="presentation"
+                viewBox="0 0 24 16"
+              >
+                <path
+                  d="M0 15.985v-2h24v2H0zm0-9h24v2H0v-2zm0-7h24v2H0v-2z"
+                  fill="currentColor"
+                ></path></svg
+            ></span>
+          </button>
+          <nav class="nav-top" id="navbar-top">
+            <div class="wrapper-top">
+              <ul class="nav-links-top">
+                <li class=""><a href="#" class="border-bottom active-link">Home</a></li>
+
+                <li class="border-bottom">
+                  <a href="#" class="desktop-item">Shop </a>
+                  <!-- <input type="checkbox" id="showDrop" /> -->
+                  <label for="showDrop" class="mobile-item mb" onclick="show()"
+                    ><span> Shop</span>
+                    <span id="btn-pls" class="btn-pls">+</span></label
+                  >
+                  <ul class="drop-menu-top" id="cl">
+                    <li>
+                      <a href="#">2023 Hive Life Conference Specials </a>
+                    </li>
+                    <li><a href="#">10 Frame Hives &amp; Components</a></li>
+                    <li><a href="#">8 Frame Hives &amp; Components</a></li>
+                    <li><a href="#">5 Frame Hives &amp; Components</a></li>
+                    <li><a href="#">Bee Suits &amp; Gloves</a></li>
+                    <li><a href="#">Bees &amp; Queens</a></li>
+                    <li><a href="#">Beginner Kits</a></li>
+                    <li><a href="#">Feed &amp; Supplements</a></li>
+                    <li><a href="#">Feeders</a></li>
+                    <li><a href="#">Frames &amp; Foundation</a></li>
+                    <li><a href="#">Health &amp; Pest Control</a></li>
+                    <li><a href="#">Hive Accessories </a></li>
+                    <li><a href="#">Honey Extracting - Extractors </a></li>
+                    <li><a href="#">Feed &amp; Supplements</a></li>
+                    <li>
+                      <a href="#"
+                        >Honey Extracting - Honey Removal, Processing, and
+                        Extracting Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Honey Extracting - Uncapping Tanks &amp; Tools
+                      </a>
+                    </li>
+                    <li><a href="#">Honey Storage and Containers </a></li>
+                    <li><a href="#">Queen Rearing Supplies</a></li>
+                    <li><a href="#">Smokers &amp; Tools </a></li>
+                  </ul>
+                </li>
+                <li class="border-bottom">
+                  <a href="#" class="nav-links-bor">2023 Hive Life Conference Specials</a>
+                </li>
+                <li class="border-bottom"><a href="#" class="nav-links-bor">About Us</a></li>
+                <li class="border-bottom"><a href="#" class="nav-links-bor">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="header-center">
+          <img
+            class="hillco-logo"
+            src="https://cdn.shopify.com/s/files/1/0630/5520/0511/files/Asset_1_300x-8_350x@2x.png?v=1647328688"
+            alt=""
+          />
+        </div>
+        <div class="header-right">
+          <div class="header-icons">
+            <a href="#" class="icon icon-account">
+              <svg
+                class="Icon Icon--account"
+                role="presentation"
+                viewBox="0 0 20 20"
+              >
+                <g
+                  transform="translate(1 1)"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke-linecap="square"
+                >
+                  <path
+                    d="M0 18c0-4.5188182 3.663-8.18181818 8.18181818-8.18181818h1.63636364C14.337 9.81818182 18 13.4811818 18 18"
+                  ></path>
+                  <circle cx="9" cy="4.90909091" r="4.90909091"></circle>
+                </g>
+              </svg>
+            </a>
+            <a class="icon" href="#" onclick="showSearch()">
+              <svg
+                class="Icon Icon--search-desktop"
+                role="presentation"
+                viewBox="0 0 21 21"
+              >
+                <g
+                  transform="translate(1 1)"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke-linecap="square"
+                >
+                  <path d="M18 18l-5.7096-5.7096"></path>
+                  <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                </g>
+              </svg>
+            </a>
+            <a class="icon" href="#">
+              <svg
+                class="Icon icon-cart-desktop"
+                role="presentation"
+                viewBox="0 0 19 23"
+              >
+                <path
+                  d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="navbar-bottom" id="navbar">
+          <div class="wrapper-bottom">
+            <ul class="nav-links-bottom">
+              <li class="">
+                <a href="#" class="border-bottom active-link">Home</a>
+              </li>
+
+              <li class="shop border-bottom">
+                <a href="#" class="desktop-item">Shop </a>
+                <!-- <input type="checkbox" id="showDrop" /> -->
+                <label for="showDrop" class="mobile-item mb" onclick="show()"
+                  ><span> Shop</span>
+                  <span id="btn-pls" class="btn-pls">+</span></label
+                >
+                <ul class="drop-menu-bottom" id="cl">
+                  <li><a href="#">2023 Hive Life Conference Specials </a></li>
+                  <li><a href="#">10 Frame Hives &amp; Components</a></li>
+                  <li><a href="#">8 Frame Hives &amp; Components</a></li>
+                  <li><a href="#">5 Frame Hives &amp; Components</a></li>
+                  <li><a href="#">Bee Suits &amp; Gloves</a></li>
+                  <li><a href="#">Bees &amp; Queens</a></li>
+                  <li><a href="#">Beginner Kits</a></li>
+                  <li><a href="#">Feed &amp; Supplements</a></li>
+                  <li><a href="#">Feeders</a></li>
+                  <li><a href="#">Frames &amp; Foundation</a></li>
+                  <li><a href="#">Health &amp; Pest Control</a></li>
+                  <li><a href="#">Hive Accessories </a></li>
+                  <li><a href="#">Honey Extracting - Extractors </a></li>
+                  <li><a href="#">Feed &amp; Supplements</a></li>
+                  <li>
+                    <a href="#"
+                      >Honey Extracting - Honey Removal, Processing, and
+                      Extracting Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Honey Extracting - Uncapping Tanks &amp; Tools
+                    </a>
+                  </li>
+                  <li><a href="#">Honey Storage and Containers </a></li>
+                  <li><a href="#">Queen Rearing Supplies</a></li>
+                  <li><a href="#">Smokers &amp; Tools </a></li>
+                </ul>
+              </li>
+              <li class="border-bottom">
+                <a href="#" class="nav-links-bor"
+                  >2023 Hive Life Conference Specials</a
+                >
+              </li>
+              <li class="border-bottom">
+                <a href="#" class="nav-links-bor">About Us</a>
+              </li>
+              <li class="border-bottom">
+                <a href="#" class="nav-links-bor">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div class="main-search" id="main-search">
+      
+      <div class="search-div">
+        <!-- <span class="search-icon"><li class="fa fa-search"></li></span> -->
+        <svg class="Icon Icon-search-desktop search-icon" role="presentation" viewBox="0 0 21 21">
+          <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+            <path d="M18 18l-5.7096-5.7096"></path>
+            <circle cx="7.2" cy="7.2" r="7.2"></circle>
+          </g>
+        </svg><input
+          type="search"
+          class="search"
+          placeholder="Search..."
+          autofocus
+        /><span onclick="hideSearch()" class="cross-icon"> <svg
+          class="Icon-cros Icon--close"
+          role="presentation"
+          viewBox="0 0 16 14"
+        >
+          <path
+            d="M15 0L1 14m14 0L1 0"
+            stroke="currentColor"
+            fill="none"
+            fill-rule="evenodd"
+          ></path>
+        </svg></span>
+      </div>
+    </div>
+    <section id="conf-sec">
+      <div class="conf-main">
+        <div class="conf-left">
+          <div class="inner-conf-left">
+            <div class="">
+              <h2 class="conf-l-h2">
+                Attending the Hive Life Conference? We sure are!
+              </h2>
+            </div>
+            <div class="conf-detail-div">
+              <p>
+                Click below to check out the amazing deals we are offering for
+                pre-orders and purchases at Hive Life!
+              </p>
+            </div>
+            <div class="btn-special-div">
+              <button class="btn-special" type="button">
+                View Hive Life Special
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="conf-right">
+          <img class="img-slide-right" src="./images/logo-2.avif" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="shoppin-sec">
+      <div class="shopping-main">
+        <div class="shopping-left">
+          <h3 class="fre-h3">
+            Free Shopping <br />
+            on ALL orders over $100
+          </h3>
+        </div>
+        <div class="shopping-right">
+          <img class="free-img" src="./images/van-img.avif" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="card-sec" class="card-sec row row-wrap">
+      <div class="col-1">
+        <div class="card">
+          <div class="image img1">
+            <div class="card-heading">
+              <h2 class="card-h2">10 Frame Hives & Components</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img2">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad-1">8 Frame Hives & Components</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img3">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad-1">5 Frame Hives & Components</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img4">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Frames & Foundation</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img5">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Hive Accessories</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img6">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Feeders</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img7">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Bee Suit & Gloves</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img8">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Smookers & Tools</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img9">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Health & Pest Control</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img10">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Feed and Supplements</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img11">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Bees & Queens</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img12">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Beginners Kits</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img13">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Honey Extracting</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img14">
+            <div class="card-heading">
+              <h2 class="card-h2 card-h2-pad">Uncapping Tanks & tools</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img15">
+            <div class="card-heading">
+              <h2 class="card-h2">Honey Removal & Accessories</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img16">
+            <div class="card-heading">
+              <h2 class="card-h2">Honey Storage and Containers</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img17">
+            <div class="card-heading">
+              <h2 class="card-h2">Books and gift Items</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="card">
+          <div class="image img18">
+            <div class="card-heading">
+              <h2 class="card-h2">Queen Rearing Supplies</h2>
+              <button class="btn-card">View Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="what-do-sec" class="what-do-sec">
+      <div class="what-do-left">
+        <div class="what-do-left-inner">
+          <h2 class="what-do-h2">What We Do</h2>
+
+          <div class="what-do-detail">
+            <p>
+              HillCo, LLC is a bee equipment supplier committed to helping
+              beekeepers maintain their colonies and harvest delicious honey
+              with our line of quality products.
+              <br />
+              <br />
+              We carry a variety of beekeeping equipment, including beehives and
+              components, bee suits, smokers, uncapping tools, uncapping tanks,
+              honey tanks, and especially our signature honey extractors.
+              <br />
+
+              <br />
+              We also work with reputable bee breeders to supply you with
+              healthy bees and queens and supplies to take care of them. (Note:
+              Live bees are available only for pickup at our facility in Minonk,
+              IL.)
+              <br />
+              <br />
+              Contact us today with any questions you may have about beekeeping
+              or what we can provide as a bee equipment supplier.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="what-do-right">
+        <div class="what-do-img-div img-slide-right">
+          <img
+            class="bee-img"
+            src="https://cdn.shopify.com/s/files/1/0630/5520/0511/files/honey-bee-close-up_1200x.jpg?v=1649835166"
+            alt="bee-image"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer">
+        <div class="f-col col-icons">
+          <img
+            class="footer-img"
+            src="https://cdn.shopify.com/s/files/1/0630/5520/0511/files/Asset_1_300x-8_300x@2x.png?v=1647328688"
+            alt="logo"
+          />
+          <div class="footer-content">
+            <p>
+              710 Lincoln St <br />
+              Minonk, IL 61760 USA
+              <br />
+              (309)432-5767
+              <br />
+              <br />
+              <strong>Business Hours: <br /></strong>
+              Monday-Friday 9am to 5pm
+              <br />
+              Saturday 9am to 1pm
+            </p>
+          </div>
+          <div class="social-icon-div">
+            <a href="#" class="social-icon">
+              <span class="Icon-Wrapper--clickable"
+                ><svg class="Icon Icon--facebook-" viewBox="0 0 9 17">
+                  <path
+                    d="M5.842 17V9.246h2.653l.398-3.023h-3.05v-1.93c0-.874.246-1.47 1.526-1.47H9V.118C8.718.082 7.75 0 6.623 0 4.27 0 2.66 1.408 2.66 3.994v2.23H0v3.022h2.66V17h3.182z"
+                  ></path></svg
+              ></span>
+            </a>
+            <a href="#" class="social-icon"
+              ><span class="Icon-Wrapper--clickable"
+                ><svg
+                  class="Icon Icon--youtube-"
+                  role="presentation"
+                  viewBox="0 0 33 32"
+                >
+                  <path
+                    d="M0 25.693q0 1.997 1.318 3.395t3.209 1.398h24.259q1.891 0 3.209-1.398t1.318-3.395V6.387q0-1.997-1.331-3.435t-3.195-1.438H4.528q-1.864 0-3.195 1.438T.002 6.387v19.306zm12.116-3.488V9.876q0-.186.107-.293.08-.027.133-.027l.133.027 11.61 6.178q.107.107.107.266 0 .107-.107.213l-11.61 6.178q-.053.053-.107.053-.107 0-.16-.053-.107-.107-.107-.213z"
+                  ></path></svg></span
+            ></a>
+          </div>
+        </div>
+        <div class="f-col col-link">
+          <strong style="font-size: 13px">Quick Link</strong>
+          <a class="footer-link" href="#">Shop</a>
+          <a class="footer-link" href="#">About us</a>
+          <a class="footer-link" href="#">Contact</a>
+        </div>
+        <div class="f-col col-info">
+          <strong style="font-size: 13px">More Info</strong>
+          <a class="footer-link" href="#">Privacy</a>
+          <a class="footer-link" href="#">Fulfilment and Refund</a>
+          <a class="footer-link" href="#">Term of Service</a>
+        </div>
+        <div class="f-col sub-col">
+          <strong style="font-size: 13px">SUBCRIBE TO OUR NEWS LETTER</strong>
+          <p class="footer-link">
+            For the best offers and new product launches.
+          </p>
+          <input
+            type="text"
+            class="email-input"
+            placeholder="Enter your email address"
+          />
+          <button class="btn-subcribe">SUBSCRIBE</button>
+        </div>
+      </div>
+      <div class="footer-text-div-bottom">
+        <p class="footer-text">&copy HillCo, LLC</p>
+      </div>
+    </section>
+    <script src="js.js"></script>
+  </body>
+</html>

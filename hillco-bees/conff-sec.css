@@ -1,0 +1,68 @@
+#conf-sec {
+  background-color: #f2b737;
+  padding: 20px 0;
+}
+.conf-main {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.conf-left {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 50%;
+  padding-left: 40px;
+}
+.inner-conf-left {
+  width: 29rem;
+}
+.conf-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.conf-l-h2 {
+  font-size: 26px;
+  line-height: 36px;
+  width: 100%;
+}
+.conf-detail-div {
+  display: inline-block;
+  margin: 2rem 2rem 20px 0;
+  width: 100%;
+  line-height: 25px;
+}
+.btn-special {
+  width: 100%;
+  background-color: #000000;
+  padding: 14px 28px;
+  color: #fff;
+  border: 0;
+  font-size: calc(
+    var(--base-text-font-size) - (var(--default-text-font-size) - 12px)
+  );
+  font-weight: var(--heading-font-weight);
+  font-family: var(--heading-font-family);
+  font-style: var(--heading-font-style);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.btn-special-div {
+  width: 280px;
+}
+.img-slide-right {
+  animation: imaload 0.8s;
+}
+@keyframes imaload {
+  from {
+    opacity: 0;
+    transform: translate(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

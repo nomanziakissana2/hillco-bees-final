@@ -1,0 +1,137 @@
+#what-do-sec {
+  background-color: var(--background);
+  display: flex;
+}
+.what-do-h2 {
+  font-size: 26px;
+}
+.what-do-left {
+  padding: 3rem 8% 6rem 6%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.what-do-detail {
+  margin-top: 2rem;
+  line-height: 25px;
+}
+.what-do-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 3rem 0 4rem 0;
+}
+.bee-img {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  justify-content: space-between;
+
+  padding: 2rem 3.3rem 2rem 3.3rem;
+}
+.f-col {
+  width: 27%;
+  padding: 0 1rem;
+}
+.col-info {
+  width: 17%;
+}
+.col-link {
+  width: 12%;
+}
+.col-icons {
+  width: 36%;
+  padding-left: 1rem;
+}
+.footer-img {
+  width: 230px;
+  height: 63px;
+  padding-bottom: 20px;
+}
+.footer-content {
+  text-align: left;
+  /* margin-top: 1rem; */
+  line-height: 1.65;
+}
+.footer-link {
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+p.footer-link {
+  line-height: 25px;
+}
+.social-icon {
+  color: #fff;
+  text-decoration: none;
+}
+.social-icon-div {
+  margin-top: 30px;
+}
+.email-input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: transparent;
+  border: 1px solid #f2b737;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: 0;
+  margin: 1.5rem 0;
+}
+.email-input::placeholder {
+  color: #fff;
+}
+.email-input:focus {
+  /* outline:0; */
+  /* outline-color: #000000; */
+  /* border: 0; */
+  border: 1px solid black;
+}
+.btn-subcribe {
+  background-color: #000000;
+  color: #ffff;
+  font-weight: var(--heading-font-weight);
+  font-size: calc(
+    var(--base-text-font-size) - (var(--default-text-font-size) - 12px)
+  );
+  font-style: var(--heading-font-style);
+  padding: 14px 28px;
+  border: 1px solid #fff;
+  letter-spacing: 0.2em;
+}
+.footer-aside {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  position: absolute;
+  left: 70px;
+  font-size: 12px;
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sub-col {
+  width: 305px;
+}
+.col-info {
+  width: 220px;
+}
+.col-link {
+  width: 114px;
+}
+.col-icons {
+  width: 400px;
+}
